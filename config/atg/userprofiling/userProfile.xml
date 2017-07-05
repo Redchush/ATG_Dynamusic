@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<!DOCTYPE gsa-template
+    PUBLIC "-//Art Technology Group, Inc.//DTD General SQL Adapter//EN"
+    "http://www.atg.com/dtds/gsa/gsa_1.0.dtd">
+
+<!-- This file provides a starting point for extending the
+     profile repository.
+
+     The comments below coincide with the instructions in the
+     lab.
+ -->
+
+<gsa-template>
+
+  <item-descriptor name="user" >
+
+    <table name="dynamusic_user" type="auxiliary" id-column-name="user_id" >
+      <property name="info" data-type="string" column-name="info" category="dynamusic"/>
+      <property name="shareProfile" data-type="boolean" column-name="share_profile" category="dynamusic"/>
+    </table>
+
+    <table name="dynamusic_prefgenres" type="multi" id-column-name="id" >
+      <property name="prefGenres" data-type="set" component-data-type="string" column-name="genre" category="dynamusic"/>
+    </table>
+
+    <table name="dynamusic_viewedartists" type="multi" id-column-name="user_id">
+      <property name="viewedArtists" data-type="set" component-item-type="artist" repository="/dynamusic/SongsRepository" column-name="artist_id" category="dynamusic"/>
+    </table>
+    
+    <table name="dynamusic_user_playlists" type="multi" id-column-name="user_id">
+      <property name="playlists" data-type="set" component-item-type="playlist" column-name="pl_id"/>
+    </table>
+
+  </item-descriptor>
+
+  <item-descriptor name="playlist">
+    <table name="dynamusic_playlist" id-column-name="id" type="primary">
+      <property name="name" data-type="string"/>
+      <property name="description" data-type="string"/>
+      <property name="publish" data-type="boolean"/>
+
+    </table>
+    <table name="dynamusic_playlist_song" type="multi" id-column-name="pl_id">
+      <property name="songs" column-name="song_id" data-type="set" component-item-type="song" repository="/dynamusic/SongsRepository"/>
+    </table>
+
+
+
+  </item-descriptor>
+
+</gsa-template>

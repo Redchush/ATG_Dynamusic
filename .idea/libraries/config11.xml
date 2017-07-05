@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="config11">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../DPS/config/userprofiling.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../DPS/config/oca-html.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../DPS/config/oca-xml.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../DPS/config/oca-cms.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../DPS/config/profile.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../DPS/config/targeting.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,17 @@
+<component name="libraryTable">
+  <library name="DAS/lib">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/../DAS/lib" />
+      <root url="file://$PROJECT_DIR$/../DAS/lib" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/../DAS/lib" />
+      <root url="file://$PROJECT_DIR$/../DAS/lib" />
+    </SOURCES>
+    <jarDirectory url="file://$PROJECT_DIR$/../DAS/lib" recursive="false" />
+    <jarDirectory url="file://$PROJECT_DIR$/../DAS/lib" recursive="false" />
+    <jarDirectory url="file://$PROJECT_DIR$/../DAS/lib" recursive="false" type="SOURCES" />
+    <jarDirectory url="file://$PROJECT_DIR$/../DAS/lib" recursive="false" type="SOURCES" />
+  </library>
+</component>

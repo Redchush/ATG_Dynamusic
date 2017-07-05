@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="config4">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../DPS/Versioned/config/config.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

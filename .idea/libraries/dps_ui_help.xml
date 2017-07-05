@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="dps_ui_help">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../DPS/help/dps_ui_help.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

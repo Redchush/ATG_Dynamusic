@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE process SYSTEM "dynamosystemresource:/atg/dtds/pdl/pdl_1.0.dtd">
+<process author="admin" creation-time="1498942654646" enabled="true" last-modified-by="admin" modification-time="1498942937104">
+  <segment migrate-subjects="true">
+    <segment-name>Segment 1</segment-name>
+    <!--================================-->
+    <!--== Logs in  -->
+    <!--================================-->
+    <event id="1">
+      <event-name>atg.dps.Login</event-name>
+    </event>
+    <!--================================-->
+    <!--== Add items to slot named AlbumPromo named Highway 61 Revisited  -->
+    <!--================================-->
+    <action id="2">
+      <action-name>fillSlot</action-name>
+      <action-param name="slot">
+        <nucleus-property>
+          <nucleus-path>/atg/registry/Slots/AlbumPromo</nucleus-path>
+        </nucleus-property>
+      </action-param>
+      <action-param name="ids">
+        <array type="java.lang.String[]">
+          <constant>300122</constant>
+        </array>
+      </action-param>
+    </action>
+  </segment>
+  <segment migrate-subjects="true">
+    <segment-name>Segment 2</segment-name>
+    <!--================================-->
+    <!--== Logs in  -->
+    <!--================================-->
+    <event id="1">
+      <event-name>atg.dps.Login</event-name>
+    </event>
+    <!--================================-->
+    <!--== Views an item from SongsRepository of type artist whose name is The Beatles  -->
+    <!--================================-->
+    <event id="2">
+      <event-name>atg.dps.ViewItem</event-name>
+      <filter construct="content-repository-filter" operator="eq">
+        <event-property>
+          <property-name>repositoryName</property-name>
+        </event-property>
+        <constant>SongsRepository</constant>
+      </filter>
+      <filter construct="content-item-descriptor" operator="eq">
+        <event-property>
+          <property-name>itemType</property-name>
+        </event-property>
+        <constant>artist</constant>
+      </filter>
+      <filter construct="content-property-filter" operator="eq">
+        <event-property>
+          <property-name>item</property-name>
+          <property-name>name</property-name>
+        </event-property>
+        <constant>The Beatles</constant>
+      </filter>
+    </event>
+    <!--================================-->
+    <!--== Add items to slot named AlbumPromo named Let It Be  -->
+    <!--================================-->
+    <action id="3">
+      <action-name>fillSlot</action-name>
+      <action-param name="slot">
+        <nucleus-property>
+          <nucleus-path>/atg/registry/Slots/AlbumPromo</nucleus-path>
+        </nucleus-property>
+      </action-param>
+      <action-param name="ids">
+        <array type="java.lang.String[]">
+          <constant>300022</constant>
+        </array>
+      </action-param>
+    </action>
+  </segment>
+</process>

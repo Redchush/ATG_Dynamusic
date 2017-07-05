@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="config13">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../DPS/Search/Base/config/config.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
